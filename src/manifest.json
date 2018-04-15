@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "GitHub Threads - Order by thumbs up",
+  "description": "Order by relevance",
+  "version": "0.2",
+
+  "page_action": {
+    "default_icon": "thumbs.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "*://github.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://github.com/*"],
+      "js": ["main.js"]
+    }
+  ]
+}

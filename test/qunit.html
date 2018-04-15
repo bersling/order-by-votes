@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>QUnit</title>
+  <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.1.1.css">
+</head>
+<body>
+  
+  <div id="discussion_bucket">
+    <div>some stuff</div>
+    <div id="issuecomment-1">
+      <button class="reaction-summary-item">
+        <g-emoji>bla</g-emoji>
+        5
+      </button>
+    </div>
+    <div id="issuecomment-2">
+      <div>body</div>
+      <button class="reaction-summary-item">
+        <g-emoji>bla</g-emoji>
+        3
+      </button>
+    </div>
+  </div>
+  
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+  <script src="https://code.jquery.com/qunit/qunit-2.1.1.js"></script>
+  <script src="tests.js"></script>
+
+</body>
+</html>
